@@ -15,7 +15,7 @@ public class Functions {
     static ArrayList getIntegersFromList(List list){
         ArrayList ints = new ArrayList();
         for (var v:list) {
-            if(v.getClass() == Integer.class) {
+            if(v instanceof Integer) {
                 ints.add(v);
             }
         }
